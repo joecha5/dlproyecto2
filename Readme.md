@@ -11,7 +11,7 @@ Módulo que convierte el valor de código gray a binario para ser utilizado en l
 Módulo que lleva registro del valor ingresado, se actualiza agregando al registro cada cambio realizado en la entrada.
 
 #### Display 0 y Display 1
-Código que selecciona cuales segmento del display 1 y display 2 deben encenderse en la pantallas de acuerdo al código binario convertido desde gray que recibe en la entrada.
+Código que selecciona cuales segmento del display 0 y display 1 deben encenderse en la pantallas de acuerdo al código binario convertido desde gray que recibe en la entrada.
 
 #### Refresh And1.v
 Módulo que define la tasa de refresco de cada segmento del led para mostrar la iluminación deseada en cada segmento de acuerdo al valor que se quiere mostrar en pantalla.
@@ -22,13 +22,13 @@ Módulo contador para el display, lleva un conteo hasta alcanzar el valor máxim
 
 #### FFT.v
 
-Código que implementa un Flip Flop que se utiliza para la tasa de refresco
+Código que implementa un Flip Flop que se utiliza para la tasa de refresco.
 
 #### MUX
 
 Módulo que implementa un multiplexor para que los LEDs sean encendidos en el orden correcto y evitar encendido en segmentos no deseados.
 
-#### Refreshcounter 500mS
+#### Refreshcounter 500 ms
 
 Módulo contador para alcanzar la tasa de refresco de 500ms para actualizar la display de 7 segmentos.
 
