@@ -10,7 +10,7 @@ Módulo que convierte el valor de código gray a binario para ser utilizado en l
 #### Registro.v
 Módulo que lleva registro del valor ingresado, se actualiza agregando al registro cada cambio realizado en la entrada.
 
-#### Display 1 y Display 2
+#### Display 0 y Display 1
 Código que selecciona cuales segmento del display 1 y display 2 deben encenderse en la pantallas de acuerdo al código binario convertido desde gray que recibe en la entrada.
 
 #### Refresh And1.v
@@ -81,6 +81,6 @@ La velocidad máximo del reloj es de 0.885nS, según se muestra en la siguiente 
 
 
 ## Principales problemas hallados durante el trabajo y de las soluciones aplicadas 
-- Al ingresar números de dos dígitos el número en An 1 se mostraba parcialmente en el An 2, esto se solucionó implementando un multiplexor de 2 a 1.
+- Al ingresar números de dos dígitos el número en An 0 se mostraba parcialmente en el An 1, esto se solucionó implementando un multiplexor de 2 a 1.
 
-- En la pantalla todos los 7 segmentos se encendían al mismo tiempo de los 4 display, se desahabilitó el funcionamiento de los an 3 y 4 para unicamente usar 1 y 2. Además los segmentos que corresponden al valor ingresado iluminaban con mayor intensidad, esto se solucionó variando el valor de la tasa de refresco hasta iluminar unicamente los segmentos correspondientes.
+- En la pantalla todos los 7 segmentos se encendían al mismo tiempo de los 4 display, se desahabilitó el funcionamiento de los an 2 y 3 para unicamente usar 0 y 1. Además los segmentos que corresponden al valor ingresado iluminaban con mayor intensidad, esto se solucionó variando el valor de la tasa de refresco hasta iluminar unicamente los segmentos correspondientes.
