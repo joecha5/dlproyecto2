@@ -3,15 +3,16 @@ module And1(clk, rst, Q1, Q2);
 	output Q1, Q2;
 
 
-	 wire [10:0] Cout;
+	 wire [18:0] Cout;
 	 
  Cont Refresh(clk, rst, Cout);
 
 
  assign an1=(Cout==1),
-			an12=(Cout==400),
-			an2=(Cout==400),
-			an21=(Cout==800);
+			an1=(Cout==0),
+			an12=(Cout==120000),
+			an2=(Cout==240000),
+			an21=(Cout==360000);
  
  
  FFT FFTX(clk, rst, {an1 | an12}, Q1);
