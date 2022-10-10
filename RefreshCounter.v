@@ -13,4 +13,3 @@ always@(posedge clk or posedge rst)
 			Cout = Cout + 19'd1;
  
 endmodule
-	   
